@@ -1,0 +1,16 @@
+{
+  "containerDefinitions" : [
+    {
+      "image" : "%REPOSITORY_URI%:%TAG%",
+      "memory" : 10,
+      "name" : "%NAME%",
+      "portMappings" : [
+        {
+          "containerPort" : 8080,
+          "protocol" : "tcp"
+        }
+      ],
+      "privileged" : false
+    }
+  ]
+}
